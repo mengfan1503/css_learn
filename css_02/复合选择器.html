@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代(父子) */
+        ol li {
+            color: grey;
+        }
+
+        ol li a {
+            color: blue;
+        }
+
+        /* 亲儿子 */
+        .nav li {
+            color: yellow;
+        }
+
+        .ff>a {
+            color: yellow;
+        }
+
+        /* 并集 */
+        .a1,
+        .a2,
+        .pig li {
+            color: blue;
+        }
+
+
+        /* 伪类 lvha 顺序*/
+        a:link {
+            counter-reset: black;
+            text-decoration: none;
+        }
+
+        /* 点过 */
+        a:visited {
+            color: white;
+        }
+
+        /* 点击 */
+        a:hover {
+            color: pink;
+        }
+
+        /* 长按 */
+        a:active {
+            color: green;
+        }
+
+
+        /* focus */
+
+        input:focus {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 父子 -->
+    <ol>
+        ol不变
+        <li>a</li>
+        <li>d</li>
+        <li><a href="">ggggg</a></li>
+    </ol>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="nav">
+        <li>cd</li>
+        <li>cd</li>
+        <li>cd</li>
+    </ul>
+
+    <!-- 儿子 -->
+    <div class="ff">
+        <a href="" son>
+            son
+        </a>
+        <p>
+            <a href="">gson</a>
+        </p>
+    </div>
+
+
+    <!-- 并集 -->
+
+    <div class="a1">熊大</div>
+    <p class="a2">熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li>佩奇</li>
+        <li>巴巴</li>
+        <li>妈妈</li>
+    </ul>
+
+
+    <!-- 伪类 -->
+
+    <a href="emmet语法使用.html">佩奇</a>
+    <a href="">阿非</a>
+    <a href="">cccs</a>
+
+
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

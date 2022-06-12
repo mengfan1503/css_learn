@@ -1,0 +1,225 @@
+.main {
+    margin: 10px 0;
+    margin-left: 220px;
+    width: 980px;
+    height: 465px;
+}
+
+
+.focus {
+    float: left;
+    height: 455px;
+    width: 720px;
+    background-color: blue;
+}
+
+.flashnews {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+
+.news {
+    height: 165px;
+    background-color: gery;
+    border: 1px solid #e4e4e4;
+
+}
+
+.news_hd {
+    padding: 0 15px;
+    height: 33px;
+    font-size: 14px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.news_hd h5{
+    float: left;
+}
+
+.news_hd .more {
+    float: right;
+}
+
+.news_hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.news_dd {
+    padding: 5px 15px 0;
+}
+
+.news_dd li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.lifeservice {
+    height: 209px;
+    overflow: hidden;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    margin-top: 12px;
+    width: 25px;
+    height: 28px;
+    background: url(../images/icons.png) no-repeat -17px -15px;
+}
+
+
+.bargain {
+    margin-top: 5px;
+}
+
+/* main */
+
+.recom {
+    margin-top: -5px;
+    height: 163px;
+    width: 100%;
+}
+
+.recom_hd {
+    float: left;
+    width: 204px;
+    height: 163px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #5c5251;
+}
+
+.recom_bd {
+    float:left;
+}
+
+.recom_bd li {
+    position: relative;
+    float: left;
+}
+
+
+.recom_bd li img {
+    height: 163px;
+    width: 249px;
+}
+
+.recom_bd li:nth-child(-n+3)::after {
+    content: '';
+    position:absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+
+/* 楼层区域 */
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: normal;
+}
+
+.box_hd .tab_list {
+    float: right;
+}
+
+.box_hd li {
+    float: left;
+    line-height: 30px;
+}
+
+.box_hd li a {
+    padding: 0 15px;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+
+.box_bd .tab_content .tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #fcfcfc;
+    text-align: center;
+    
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_210 li {
+    margin-right: 12px;
+    float: left;
+    width: 83px;
+    height: 33px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+}
+
+
+.col_329 {
+    width: 329px;
+    background-color: #fff;
+}
+
+.col_211 {
+    padding-left: 15px;
+    width: 211px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 361px;
+}
+
+.col_219 {
+    padding-left: 15px;
+    width: 219px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 361px;
+}
+
+
+

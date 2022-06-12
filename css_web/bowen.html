@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+
+        .city {
+            position: relative;
+            margin: 100px auto;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #09f;
+        }
+
+
+        @keyframes move {
+            0% {}
+
+            75% {
+                width: 30px;
+                height: 30px;
+            }
+
+            100% {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+
+        .city div[class^='p'] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            box-shadow: 0 0 12px #09f;
+            animation: move 1s linear infinite;
+        }
+
+
+        .city div.p1 {
+            animation-delay: 0s;
+        }
+
+        .city div.p2 {
+            animation-delay: .4s;
+        }
+
+        .city div.p3 {
+            animation-delay: .8s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="city">
+        <div class="p1"></div>
+        <div class="p2"></div>
+        <div class="p3"></div>
+    </div>
+
+
+</body>
+
+</html>

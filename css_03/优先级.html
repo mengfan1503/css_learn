@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- 行内style（！important）>id>class>标签>继承 -->
+    <style>
+        div {
+            color: red;
+        }
+
+        .test {
+            color: pink;
+        }
+
+        .n {
+            color: pink;
+        }
+
+        p {
+            color: red;
+        }
+
+
+        /* 权重不进位 */
+        ul li {
+            color: pink;
+        }
+
+        .nav ul li {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test">小但真的好i看</div>
+    <div class="n">
+        <p>阿非也很帅</p>
+    </div>
+
+
+    <div class="nav">
+        <ul>
+            <li>阿非</li>
+            <li>小但</li>
+            <li>百万</li>
+        </ul>
+    </div>
+</body>
+
+</html>

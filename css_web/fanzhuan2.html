@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .body {
+            perspective: 1000px;
+        }
+
+        @keyframes rol {
+            0% {
+                transform: rotateX(-5deg) rotateY(0);
+            }
+
+            100% {
+                transform: rotateX(-5deg) rotateY(360deg);
+            }
+        }
+
+        .box {
+            position: relative;
+            margin: 200px auto;
+            width: 300px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: rol 10s linear infinite;
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+        }
+
+        .box div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 200px;
+            background: url(./靓女.jpg) no-repeat;
+            background-size: 300px 200px;
+        }
+
+
+        .box div:nth-child(1) {
+            transform: translateZ(300px);
+        }
+
+        .box div:nth-child(2) {
+            transform: rotateY(60deg) translateZ(300px);
+        }
+
+        .box div:nth-child(3) {
+            transform: rotateY(120deg) translateZ(300px);
+        }
+
+        .box div:nth-child(4) {
+            transform: rotateY(180deg) translateZ(300px);
+        }
+
+        .box div:nth-child(5) {
+            transform: rotateY(240deg) translateZ(300px);
+        }
+
+        .box div:nth-child(6) {
+            transform: rotateY(300deg) translateZ(300px);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .b1 {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-left-color: purple;
+        }
+
+        .jd {
+            position: relative;
+            width: 100px;
+            height: 200px;
+            background-color: skyblue;
+
+        }
+
+        .ss {
+
+            position: absolute;
+            right: -10px;
+            top: 20px;
+            width: 0;
+            height: 0;
+            /* 兼容 */
+            line-height: 0;
+            font-size: 0;
+            /* 兼容 */
+            border: 5px solid transparent;
+            border-left-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b1"></div>
+    <p>由于每个边框是上顶朝盒子中心的梯形，所以当盒子长宽为0时，每个边框上顶变为0，边框就变成三角形，这时只需要给其中一个边框设置颜色，即可显示三角形。</p>
+
+    <div class="jd">
+        <span class="ss"></span>
+    </div>
+</body>
+
+</html>

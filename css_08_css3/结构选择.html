@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .niuma li:nth-child(4) {
+            background-color: #bbb;
+        }
+
+        input[value] {
+            background-color: grey;
+        }
+
+        input[type=number] {
+            background-color: yellow;
+        }
+
+        .niuma li[class^="n"] {
+            color: blue;
+        }
+
+        .niuma li[class$="dd"] {
+            color: red;
+        }
+
+        .mm li:nth-child(2n) {
+            background-color: blue;
+        }
+
+
+        .box div:nth-child(1) {
+            color: blue;
+        }
+
+
+        .box div:nth-of-type(1) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <input type="text" name="n1" id="" value="sss">
+        <input type="email">
+        <input type="number">
+    </div>
+
+    <ul class="niuma">
+        <li class="n1">牛马</li>
+        <li class="n2">牛马</li>
+        <li class="n3">牛马</li>
+        <li class="n4">牛马</li>
+        <li>牛马</li>
+        <li class="an4-dd">牛马</li>
+        <li class="an4-dd">牛马</li>
+        <li class="an4--dd">牛马</li>
+        <li class="an4">牛马</li>
+    </ul>
+
+
+    <ul class="mm">
+        <li>我是牛马1号</li>
+        <li>我是牛马2号</li>
+        <li>我是牛马3号</li>
+        <li>我是牛马4号</li>
+        <li>我是牛马5号</li>
+        <li>我是牛马6号</li>
+        <li>我是牛马7号</li>
+        <li>我是牛马8号</li>
+        <li>我是牛马9号</li>
+        <li>我是牛马10号</li>
+    </ul>
+
+    <div class="box">
+        <p>maamaa</p>
+        <div>dddd</div>
+        <div>xxxx</div>
+    </div>
+</body>
+
+</html>

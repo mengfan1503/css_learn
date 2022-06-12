@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            perspective: 500px;
+        }
+
+        img {
+            transition: all .8s;
+        }
+
+        div {
+            float: left;
+            margin-left: 200px;
+        }
+
+        .a:hover img {
+            transform: rotateX(90deg);
+        }
+
+        .b:hover img {
+            transform: rotateY(90deg);
+        }
+
+        .c:hover img {
+            transform: rotateZ(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <img src="./pvp.png" alt="">
+    </div>
+
+    <div class="b">
+        <img src="./pvp.png" alt="">
+    </div>
+
+    <div class="c">
+        <img src="./pvp.png" alt="">
+    </div>
+</body>
+
+</html>

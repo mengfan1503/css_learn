@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            position: relative;
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            transition: all .3s;
+            perspective: 400px;
+            transform-style: preserve-3d;
+        }
+
+        .box:hover {
+            transform: rotateY(180deg);
+        }
+
+        .p,
+        .b {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 200px;
+            color: #fff;
+        }
+
+        .p {
+            background-color: pink;
+        }
+
+        .b {
+            background-color: black;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="p">我是</div>
+        <div class="b">牛马</div>
+    </div>
+</body>
+
+</html>
